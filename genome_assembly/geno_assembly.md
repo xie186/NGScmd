@@ -25,11 +25,11 @@ test_R1.fq_trimming_report.txt
 ## ABYSS
 
 ```
-abyss-pe k=104 name=cotton v=-v lib='pea peb pec ped' mp='mpe mpf mpg'  \
+abyss-pe k=104 name=cotton v=-v lib='pea peb' mp='mpc mpd'  \
 pea='readA_1.fastq readA_2.fastq' \
 peb='readB_1.fastq readB_2.fastq' \
-mpe='readC_1.fastq readC_2.fastq' \
-mpg='readD_1.fastq readD_2.fastq'
+mpc='readC_1.fastq readC_2.fastq' \
+mpd='readD_1.fastq readD_2.fastq'
 ```
 
 ## Scaffolding
