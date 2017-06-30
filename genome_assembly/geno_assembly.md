@@ -37,7 +37,8 @@ mpd='readD_1.fastq readD_2.fastq'
 Weblink: https://github.com/nsoranzo/sspace_basic
 
 ```
-SSPACE_Standard_v3.0.pl -l lib.txt -s contig.fa -k 5 -a 0.7 -x 1 -p 1 -b x1 -T 19
+# Default: x=0 - do not extend contigs
+SSPACE_Standard_v3.0.pl -l libraries.txt -s contigs.fasta -k 5 -a 0.7 -x 0 -p 1 -b default -T 20
 
 ```
 
