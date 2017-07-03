@@ -31,6 +31,9 @@ peb='readB_1.fastq readB_2.fastq' \
 mpc='readC_1.fastq readC_2.fastq' \
 mpd='readD_1.fastq readD_2.fastq'
 ```
+* Output:
+
+Output directory can be assigned using `-C` papameter. 
 
 ## Scaffolding
 
