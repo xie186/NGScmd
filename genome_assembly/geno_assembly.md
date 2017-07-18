@@ -46,3 +46,26 @@ SSPACE_Standard_v3.0.pl -l libraries.txt -s contigs.fasta -k 5 -a 0.7 -x 0 -p 1 
 ```
 
 
+## SEALER
+
+
+```
+abyss-sealer -b200G -k92 -k91 -k90 -k89 -k88 --print-flanks -j 20 -o L2 -S L1_scaffold.fa -v --mask R1.fq R2.fq
+
+```
+
+## MAKER 
+
+Gene annotation 
+An easy-to-use annotation pipeline designed for emerging model organism genomes
+
+```
+# MPI run
+mpiexec -n 20 maker -fix_nucleotides maker_exe.ctl maker_opts.ctl maker_bopts.ctl
+# Normal
+maker -fix_nucleotides maker_exe.ctl maker_opts.ctl maker_bopts.ctl
+
+```
+
+
+
