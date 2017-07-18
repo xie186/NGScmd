@@ -64,7 +64,31 @@ An easy-to-use annotation pipeline designed for emerging model organism genomes
 mpiexec -n 20 maker -fix_nucleotides maker_exe.ctl maker_opts.ctl maker_bopts.ctl
 # Normal
 maker -fix_nucleotides maker_exe.ctl maker_opts.ctl maker_bopts.ctl
+```
 
+This script `gff3_merge` will take a MAKER datastore index log file, extract all the relevant GFF3 files and combined GFF3 file.  The script can also
+combine other correctly formated GFF3 files.  For this to work properly you need to be in the same directory as the datastore index.
+
+```
+#  -d The location of the MAKER datastore index log file.
+#  -o Alternate base name for the output files.
+#  -s Use STDOUT for output.
+#  -g Only write MAKER gene models to the file, and ignore evidence.
+#  -n Do not print fasta sequence in footer
+#  -l Merge legacy annotation sets (ignores already having seen
+#     features more than once for the same contig)
+gff3_merge -g -n -l -d <The location of the MAKER datastore index log.> -o <Alternate base name for the output files.>
+```
+
+
+The script `fasta_merge` take a MAKER datastore index log file, extract all
+the relevant fasta files and create fasta files with relevant
+categories of sequence (i.e. transcript, protein, GeneMark protien,
+etc.).  For this to work properly you need to be in the same directory
+as the datastore index.
+
+```
+fasta_merge -d <The location of the MAKER datastore index log.> -o <Alternate base name for the output files.>
 ```
 
 
