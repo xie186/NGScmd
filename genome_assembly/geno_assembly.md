@@ -93,3 +93,7 @@ fasta_merge -d <The location of the MAKER datastore index log.> -o <Alternate ba
 
 
 
+## 
+perl orthomcl.pl --mode 1 --fa_files test1.fasta,test2,test3.fasta
+
+
