@@ -97,3 +97,16 @@ fasta_merge -d <The location of the MAKER datastore index log.> -o <Alternate ba
 perl orthomcl.pl --mode 1 --fa_files test1.fasta,test2,test3.fasta
 
 
+## tRNA
+
+```
+tRNAscan-SE -d test.fasta
+```
+
+
+## rRNA
+
+```
+rnammer -S euk -gff out.gff -multi -f rRNA.fasta -h hmmreport -m ssu,lsu,tsu test.fasta
+
+```
