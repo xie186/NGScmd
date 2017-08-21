@@ -1,0 +1,7 @@
+# 
+
+## Number of mapped reads from BAM file
+
+```
+samtools flagstat
+```
